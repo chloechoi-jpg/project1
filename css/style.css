@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Explora:wght@400&display=swap');
 :root{
-  --bg: #ffffff;
-  --text: #111111;
-  --accent: #111111;
-  --muted: #666666;
+  --bg: #000000;
+  --text: #ffffff;
+  --accent: #ffffff;
+  --muted: #bfbfbf;
 }
 *{box-sizing:border-box}
 html,body{height:100%}
-body{background:var(--bg);color:var(--text);margin:32px;font-family:"Explora", Georgia, "Times New Roman", Times, serif}
+body{background:var(--bg);color:var(--text);margin:32px;font-family:"Explora", Georgia, "Times New Roman", Times, serif;font-size:18px;line-height:1.6} 
 
 .explora-regular {
   font-family: "Explora", serif;
@@ -20,17 +20,17 @@ body{background:var(--bg);color:var(--text);margin:32px;font-family:"Explora", G
 .row{display:flex;gap:20px;justify-content:center;margin-bottom:20px;flex-wrap:wrap}
 .row.center{margin-bottom:28px}
 
-.oval{display:inline-flex;align-items:center;justify-content:center;min-width:120px;height:56px;padding:8px 16px;border-radius:9999px;border:1px solid var(--text);background:#fff;color:var(--text);text-decoration:none;font-weight:600}
-.oval.root{min-width:200px;height:70px;font-size:16px}
-.oval.small{min-width:90px;height:44px;padding:6px 12px;font-size:14px}
-.oval:hover{} /* hover effect removed for simplicity */
+.oval{display:inline-flex;align-items:center;justify-content:center;min-width:120px;height:56px;padding:8px 16px;border-radius:9999px;border:1px solid rgba(255,255,255,0.12);background:transparent;color:var(--text);text-decoration:none;font-weight:600} 
+.oval.root{min-width:200px;height:70px;font-size:18px} 
+.oval.small{min-width:90px;height:44px;padding:6px 12px;font-size:16px} 
+.oval:hover{background:rgba(255,255,255,0.04)} /* subtle hover for dark theme */
 
 .note{color:var(--muted);margin-bottom:12px}
 .hint{margin-top:12px;color:var(--muted)}
 
 .choices{display:flex;gap:12px;margin:16px 0;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;border:1px solid rgba(0,0,0,0.06);font-size:15px}
-.btn:hover{} /* hover effect removed for simplicity */
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:8px;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:600;border:1px solid rgba(255,255,255,0.08);font-size:16px} 
+.btn:hover{opacity:0.95} /* subtle hover */
 .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
 
-.btn:focus{outline:3px solid rgba(0,0,0,0.08);outline-offset:3px}
+.btn:focus{outline:3px solid rgba(255,255,255,0.12);outline-offset:3px} 
