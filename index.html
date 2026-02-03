@@ -11,71 +11,26 @@
     <h1>Choose Your Own Adventure</h1>
     <p class="note">Click any oval to open the story</p>
 
-    <div class="tree-wrapper">
-      <svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tree diagram index">
-        <!-- connectors -->
-        <line x1="400" y1="100" x2="260" y2="200" class="line" />
-        <line x1="400" y1="100" x2="400" y2="200" class="line" />
-        <line x1="400" y1="100" x2="540" y2="200" class="line" />
+    <!-- Beginner-friendly tree made with simple HTML and CSS rows -->
+    <div class="tree">
+      <div class="row center">
+        <a href="pages/overview.html" class="oval root">Story Begins</a>
+      </div>
 
-        <!-- root box (now an oval) -->
-        <a href="pages/overview.html" class="link">
-          <ellipse cx="400" cy="65" rx="80" ry="35" class="box" />
-          <text x="400" y="75" text-anchor="middle" class="label">Story Begins</text>
-        </a>
+      <div class="row">
+        <a href="pages/box1.html" class="oval">Box 1</a>
+        <a href="pages/box2.html" class="oval">Box 2</a>
+        <a href="pages/box3.html" class="oval">Box 3</a>
+      </div>
 
-        <!-- level 1 boxes -->
-        <a href="pages/box1.html" class="link">
-          <ellipse cx="300" cy="230" rx="80" ry="30" class="box" />
-          <text x="300" y="240" text-anchor="middle" class="label">Box 1</text>
-        </a>
-
-        <a href="pages/box2.html" class="link">
-          <ellipse cx="460" cy="230" rx="80" ry="30" class="box" />
-          <text x="460" y="240" text-anchor="middle" class="label">Box 2</text>
-        </a>
-
-        <a href="pages/box3.html" class="link">
-          <ellipse cx="620" cy="230" rx="80" ry="30" class="box" />
-          <text x="620" y="240" text-anchor="middle" class="label">Box 3</text>
-        </a>
-
-        <!-- small children for Box 1 -->
-        <line x1="300" y1="260" x2="220" y2="340" class="line" />
-        <line x1="300" y1="260" x2="420" y2="340" class="line" />
-
-        <a href="pages/box1a.html" class="link">
-          <ellipse cx="220" cy="365" rx="60" ry="25" class="box small" />
-          <text x="220" y="370" text-anchor="middle" class="label small">Box 1A</text>
-        </a>
-
-        <a href="pages/box1b.html" class="link">
-          <ellipse cx="420" cy="365" rx="60" ry="25" class="box small" />
-          <text x="420" y="370" text-anchor="middle" class="label small">Box 1B</text>
-        </a>
-
-        <!-- children for Box 2 -->
-        <line x1="460" y1="260" x2="420" y2="340" class="line" />
-        <line x1="460" y1="260" x2="540" y2="340" class="line" />
-
-        <a href="pages/box2a.html" class="link">
-          <ellipse cx="420" cy="365" rx="60" ry="25" class="box small" />
-          <text x="420" y="370" text-anchor="middle" class="label small">Box 2A</text>
-        </a>
-
-        <a href="pages/box2b.html" class="link">
-          <ellipse cx="540" cy="365" rx="60" ry="25" class="box small" />
-          <text x="540" y="370" text-anchor="middle" class="label small">Box 2B</text>
-        </a>
-
-        <!-- child for Box 3 -->
-        <line x1="620" y1="260" x2="680" y2="340" class="line" />
-        <a href="pages/box3a.html" class="link">
-          <ellipse cx="680" cy="365" rx="60" ry="25" class="box small" />
-          <text x="680" y="370" text-anchor="middle" class="label small">Box 3A</text>
-        </a>
-      </svg>
-    </div>
+      <div class="row">
+        <a href="pages/box1a.html" class="oval small">Box 1A</a>
+        <a href="pages/box1b.html" class="oval small">Box 1B</a>
+        <a href="pages/box2a.html" class="oval small">Box 2A</a>
+        <a href="pages/box2b.html" class="oval small">Box 2B</a>
+        <a href="pages/box3a.html" class="oval small">Box 3A</a>
+      </div>
+    </div> 
 
     <p class="hint">Go through the tree diagram to explore different paths.</p>
   </main>
