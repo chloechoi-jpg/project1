@@ -9,7 +9,7 @@
 <body>
   <main class="container">
     <h1>Choose Your Own Adventure</h1>
-    <p class="note">Click any box to open the story</p>
+    <p class="note">Click any oval to open the story</p>
 
     <div class="tree-wrapper">
       <svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tree diagram index">
@@ -18,25 +18,25 @@
         <line x1="400" y1="100" x2="400" y2="200" class="line" />
         <line x1="400" y1="100" x2="540" y2="200" class="line" />
 
-        <!-- root box -->
+        <!-- root box (now an oval) -->
         <a href="pages/overview.html" class="link">
-          <rect x="320" y="30" width="160" height="70" rx="10" class="box" />
+          <ellipse cx="400" cy="65" rx="80" ry="35" class="box" />
           <text x="400" y="75" text-anchor="middle" class="label">Story Begins</text>
         </a>
 
         <!-- level 1 boxes -->
         <a href="pages/box1.html" class="link">
-          <rect x="220" y="200" width="160" height="60" rx="8" class="box" />
+          <ellipse cx="300" cy="230" rx="80" ry="30" class="box" />
           <text x="300" y="240" text-anchor="middle" class="label">Box 1</text>
         </a>
 
         <a href="pages/box2.html" class="link">
-          <rect x="380" y="200" width="160" height="60" rx="8" class="box" />
+          <ellipse cx="460" cy="230" rx="80" ry="30" class="box" />
           <text x="460" y="240" text-anchor="middle" class="label">Box 2</text>
         </a>
 
         <a href="pages/box3.html" class="link">
-          <rect x="540" y="200" width="160" height="60" rx="8" class="box" />
+          <ellipse cx="620" cy="230" rx="80" ry="30" class="box" />
           <text x="620" y="240" text-anchor="middle" class="label">Box 3</text>
         </a>
 
@@ -45,12 +45,12 @@
         <line x1="300" y1="260" x2="420" y2="340" class="line" />
 
         <a href="pages/box1a.html" class="link">
-          <rect x="160" y="340" width="120" height="50" rx="8" class="box small" />
+          <ellipse cx="220" cy="365" rx="60" ry="25" class="box small" />
           <text x="220" y="370" text-anchor="middle" class="label small">Box 1A</text>
         </a>
 
         <a href="pages/box1b.html" class="link">
-          <rect x="360" y="340" width="120" height="50" rx="8" class="box small" />
+          <ellipse cx="420" cy="365" rx="60" ry="25" class="box small" />
           <text x="420" y="370" text-anchor="middle" class="label small">Box 1B</text>
         </a>
 
@@ -59,19 +59,19 @@
         <line x1="460" y1="260" x2="540" y2="340" class="line" />
 
         <a href="pages/box2a.html" class="link">
-          <rect x="360" y="340" width="120" height="50" rx="8" class="box small" />
+          <ellipse cx="420" cy="365" rx="60" ry="25" class="box small" />
           <text x="420" y="370" text-anchor="middle" class="label small">Box 2A</text>
         </a>
 
         <a href="pages/box2b.html" class="link">
-          <rect x="480" y="340" width="120" height="50" rx="8" class="box small" />
+          <ellipse cx="540" cy="365" rx="60" ry="25" class="box small" />
           <text x="540" y="370" text-anchor="middle" class="label small">Box 2B</text>
         </a>
 
         <!-- child for Box 3 -->
         <line x1="620" y1="260" x2="680" y2="340" class="line" />
         <a href="pages/box3a.html" class="link">
-          <rect x="620" y="340" width="120" height="50" rx="8" class="box small" />
+          <ellipse cx="680" cy="365" rx="60" ry="25" class="box small" />
           <text x="680" y="370" text-anchor="middle" class="label small">Box 3A</text>
         </a>
       </svg>
