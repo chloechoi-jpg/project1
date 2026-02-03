@@ -1,4 +1,13 @@
-:root{--bg:#ffffff;--box-fill:#ffffff;--box-stroke:#111111;--line:#111111;--label:#111111}
+:root{
+  --bg: #ffffff;
+  --box-fill: #ffffff;
+  --box-stroke: #111111;
+  --line: #111111;
+  --label: #111111;
+  --accent: #111111; /* simple, high-contrast accent */
+  --muted: #666666;
+  --btn-radius: 8px;
+}
 *{box-sizing:border-box}
 html,body{height:100%}
 body{background:var(--bg);color:var(--label);margin:32px}
@@ -14,9 +23,10 @@ svg{width:100%;height:auto;display:block}
 
 .hint{margin-top:12px;color:#666}
 
-.choices{display:flex;gap:10px;margin:16px 0}
-.btn{display:inline-block;padding:8px 12px;border-radius:6px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;border:0}
-.btn:hover{opacity:0.95}
-.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.choices{display:flex;gap:12px;margin:16px 0;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:var(--btn-radius);background:var(--accent);color:#fff;text-decoration:none;font-weight:600;border:1px solid rgba(0,0,0,0.06);font-size:15px}
+.btn:hover{opacity:0.95;transform:translateY(-1px)}
+.btn:focus{outline:2px solid rgba(0,0,0,0.12);outline-offset:3px}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent);padding:9px 15px}
 .meta{margin-top:8px;color:var(--muted)}
 #breadcrumb{font-weight:600;color:#111}
