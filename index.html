@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Index — Tree Diagram</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Index — Tree Diagram</h1>
+    <p class="note">Click any box to open its entry page.</p>
+
+    <div class="tree-wrapper">
+      <svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tree diagram index">
+        <!-- connectors -->
+        <line x1="400" y1="100" x2="260" y2="200" class="line" />
+        <line x1="400" y1="100" x2="400" y2="200" class="line" />
+        <line x1="400" y1="100" x2="540" y2="200" class="line" />
+
+        <!-- root box -->
+        <a href="pages/overview.html" class="link">
+          <rect x="320" y="30" width="160" height="70" rx="10" class="box" />
+          <text x="400" y="75" text-anchor="middle" class="label">Overview</text>
+        </a>
+
+        <!-- level 1 boxes -->
+        <a href="pages/box1.html" class="link">
+          <rect x="220" y="200" width="160" height="60" rx="8" class="box" />
+          <text x="300" y="240" text-anchor="middle" class="label">Box 1</text>
+        </a>
+
+        <a href="pages/box2.html" class="link">
+          <rect x="380" y="200" width="160" height="60" rx="8" class="box" />
+          <text x="460" y="240" text-anchor="middle" class="label">Box 2</text>
+        </a>
+
+        <a href="pages/box3.html" class="link">
+          <rect x="540" y="200" width="160" height="60" rx="8" class="box" />
+          <text x="620" y="240" text-anchor="middle" class="label">Box 3</text>
+        </a>
+
+        <!-- optional small children for Box 1 -->
+        <line x1="300" y1="260" x2="240" y2="340" class="line" />
+        <line x1="300" y1="260" x2="360" y2="340" class="line" />
+
+        <a href="pages/box1a.html" class="link">
+          <rect x="200" y="340" width="120" height="50" rx="8" class="box small" />
+          <text x="260" y="370" text-anchor="middle" class="label small">Box 1A</text>
+        </a>
+
+        <a href="pages/box1b.html" class="link">
+          <rect x="320" y="340" width="120" height="50" rx="8" class="box small" />
+          <text x="380" y="370" text-anchor="middle" class="label small">Box 1B</text>
+        </a>
+      </svg>
+    </div>
+
+    <p class="hint">Tip: the boxes are links — open them in a new tab if you want to keep the index open ✨</p>
+  </main>
+</body>
+</html>
