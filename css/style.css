@@ -8,7 +8,7 @@
 }
 *{box-sizing:border-box}
 html,body{height:100%}
-body{background:var(--bg);color:var(--text);margin:32px;font-family:Arial,Helvetica,sans-serif}
+body{background:var(--bg);color:var(--text);margin:32px;font-family:"Explora", Georgia, "Times New Roman", Times, serif}
 
 /* Optional class to use the Google 'Explora' font */
 .explora-regular {
