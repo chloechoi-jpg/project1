@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Explora:wght@400&display=swap');
-/* Simple stylesheet — easy to read and tweak */
 :root{
   --bg: #ffffff;
   --text: #111111;
@@ -10,7 +9,6 @@
 html,body{height:100%}
 body{background:var(--bg);color:var(--text);margin:32px;font-family:"Explora", Georgia, "Times New Roman", Times, serif}
 
-/* Optional class to use the Google 'Explora' font */
 .explora-regular {
   font-family: "Explora", serif;
   font-weight: 400;
@@ -18,26 +16,21 @@ body{background:var(--bg);color:var(--text);margin:32px;font-family:"Explora", G
 } 
 .container{max-width:820px;margin:0 auto}
 
-/* Tree layout using simple rows */
 .tree{padding:16px}
 .row{display:flex;gap:20px;justify-content:center;margin-bottom:20px;flex-wrap:wrap}
 .row.center{margin-bottom:28px}
 
-/* Ovals: simple rounded links */
 .oval{display:inline-flex;align-items:center;justify-content:center;min-width:120px;height:56px;padding:8px 16px;border-radius:9999px;border:1px solid var(--text);background:#fff;color:var(--text);text-decoration:none;font-weight:600}
 .oval.root{min-width:200px;height:70px;font-size:16px}
 .oval.small{min-width:90px;height:44px;padding:6px 12px;font-size:14px}
 .oval:hover{} /* hover effect removed for simplicity */
 
-/* Simple helper text */
 .note{color:var(--muted);margin-bottom:12px}
 .hint{margin-top:12px;color:var(--muted)}
 
-/* Choices (used inside pages) */
 .choices{display:flex;gap:12px;margin:16px 0;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;border:1px solid rgba(0,0,0,0.06);font-size:15px}
 .btn:hover{} /* hover effect removed for simplicity */
 .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
 
-/* Small accessibility tweak */
 .btn:focus{outline:3px solid rgba(0,0,0,0.08);outline-offset:3px}
